@@ -12,15 +12,11 @@ export GOOGLE_APPLICATION_CREDENTIALS="/Users/sobhan/Documents/projects/ikeademo
 pip install -r requirements.txt
 
 export REGION=us-central1
-echo $REGION
+#echo $REGION
 
 export PROJECT_ID1='ikeademo1-sb1'
-echo $PROJECT_ID1
+#echo $PROJECT_ID1
 
-#export PROJECT_ID2='ikeademo2-sb1'
-#echo $PROJECT_ID2
-
-#gcloud config set project $PROJECT_ID2
 gcloud config set project $PROJECT_ID1
 
 ## 1
@@ -29,7 +25,7 @@ gcloud config set project $PROJECT_ID1
 export SOURCE='cleveron'
 # ikeademo1-sb1-cleveron-streaming-topic
 export STREAMING_TOPIC=${PROJECT_ID1}-${SOURCE}-streaming-topic1
-echo $STREAMING_TOPIC
+#echo $STREAMING_TOPIC
 
 
 #cat data.json | while read line; do gcloud pubsub topics publish <YOUR_INPUT_TOPIC_NAME> --message "$line"; done

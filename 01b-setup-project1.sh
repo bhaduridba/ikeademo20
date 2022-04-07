@@ -3,9 +3,15 @@
 ## ************************************************* ##
 ## ************************************************* ##
 
-#gcloud components update
+# 1. setup gcloud in your local laptop or in a cloud vm 
+#    gcloud components update
 # Setup environment
-export GOOGLE_APPLICATION_CREDENTIALS="/Users/sobhan/Documents/projects/ikeademo20/sa-dsm-ikeademo2-sb1.json"
+# create a service account in DSM project for Locker
+# I have create a service account sa-dsm-ikeademo2-sb1
+# create key and use it for the script
+
+### KEEP THE KEY CONFIDENTIAL ###
+export GOOGLE_APPLICATION_CREDENTIALS="/Users/sobhan/Documents/projects/ikeademo20_b/sa-dsm-ikeademo2-sb1.json"
 # gcloud auth login
 
 pip install -r requirements.txt
@@ -43,7 +49,7 @@ gsutil mb -c regional -l ${REGION} gs://${CLEVERON_SOURCE_OUTPUT}
 # create bigquery dataset
 export BQ_DEMO_DATASET3='jsondemo3'
 
-bq --location='EU' mk -d \
+bq --location='US' mk -d \
 --default_table_expiration 7200 \
 --description "This is a JSON demo3 temporary dataset." \
 ${BQ_DEMO_DATASET3}
