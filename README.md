@@ -5,4 +5,5 @@
 # I have create a service account sa-dsm-ikeademo2-sb1
 # create key and use it for the script
 
-### KEEP THE KEY CONFIDENTIAL #### ikeademo20_b
+### KEEP THE KEY CONFIDENTIAL #### ikeademo20
+# ikeademo20

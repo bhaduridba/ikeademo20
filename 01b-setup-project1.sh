@@ -26,7 +26,7 @@ export REGION=us-central1
 ## Create the Cloud Storage bucket
 
 ## Source is PROJECT 1 and PROJECT 2 is our DSM
-export PROJECT_ID2='ikeademo2-sb1'
+export PROJECT_ID2='ingka-advanced-analytics-dev'
 echo $PROJECT_ID2
 
 #export PROJECT_ID2='ikeademo2-sb1'
@@ -64,3 +64,5 @@ bq mk \
   --label organization:development \
   ${BQ_DEMO_DATASET3}.${BQ_DEMO_TABLE3} \
   jsondemo1schema.json
+
+exit

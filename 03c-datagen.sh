@@ -14,7 +14,7 @@ pip install -r requirements.txt
 export REGION=us-central1
 #echo $REGION
 
-export PROJECT_ID1='ikeademo1-sb1'
+export PROJECT_ID1='ingka-dsm-dataplatform-dev'
 #echo $PROJECT_ID1
 
 gcloud config set project $PROJECT_ID1

@@ -31,7 +31,7 @@ export REGION=us-central1
 ## in our PoC we will mock-up that SOLACE Queue with a sample PubSub topic in our dev project
 ## Once we get access to SOLACE queue we can  replace that with all relevant details
 
-export PROJECT_ID1='ikeademo1-sb1'
+export PROJECT_ID1='ingka-dsm-dataplatform-dev'
 #echo $PROJECT_ID1
 gcloud config set project $PROJECT_ID1
 
